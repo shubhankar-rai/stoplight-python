@@ -59,4 +59,11 @@ def switchToGreen():
     greenLight.color("green")
     time.sleep(3)
 
+# Simulating Traffic Light
+redLight.color("red")
+time.sleep(3)
+while True:
+    switchToGreen()
+    switchToRed()    
+
 wn.mainloop()
