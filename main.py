@@ -20,4 +20,11 @@ pen.fd(60)
 pen.rt(90)
 pen.fd(120)
 
+# Red Light
+redLight = turtle.Turtle()
+redLight.shape("circle")
+redLight.color("red")
+redLight.penup()
+redLight.goto(0, 40)
+
 wn.mainloop()
