@@ -1,4 +1,5 @@
 import turtle
+import time
 
 wn = turtle.Screen()
 wn.title("Stoplights")
@@ -23,15 +24,30 @@ pen.fd(120)
 # Red Light
 redLight = turtle.Turtle()
 redLight.shape("circle")
-redLight.color("red")
+redLight.color("grey")
 redLight.penup()
 redLight.goto(0, 40)
 
 # Yellow Light
 yellowLight = turtle.Turtle()
 yellowLight.shape("circle")
-yellowLight.color("yellow")
+yellowLight.color("grey")
 yellowLight.penup()
+
+# Red Light
+greenLight = turtle.Turtle()
+greenLight.shape("circle")
+greenLight.color("grey")
+greenLight.penup()
+greenLight.goto(0, -40)
+
+def switchToRed():
+    greenLight.color("grey")
+    yellowLight.color("yellow")
+    time.sleep(2)
+    yellowLight.color("grey")
+    redLight.color("red")
+
 
 
 wn.mainloop()
