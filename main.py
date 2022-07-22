@@ -41,13 +41,22 @@ greenLight.color("grey")
 greenLight.penup()
 greenLight.goto(0, -40)
 
+# Sequence of Changing Light from Green To Red
 def switchToRed():
     greenLight.color("grey")
     yellowLight.color("yellow")
     time.sleep(2)
     yellowLight.color("grey")
     redLight.color("red")
+    time.sleep(3)
 
-
+# Sequence of Changing Light from Red To Green
+def switchToGreen():
+    yellowLight.color("yellow")
+    time.sleep(2)
+    redLight.color("grey")
+    yellowLight.color("grey")
+    greenLight.color("green")
+    time.sleep(3)
 
 wn.mainloop()
