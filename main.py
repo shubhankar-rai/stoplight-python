@@ -27,4 +27,11 @@ redLight.color("red")
 redLight.penup()
 redLight.goto(0, 40)
 
+# Yellow Light
+yellowLight = turtle.Turtle()
+yellowLight.shape("circle")
+yellowLight.color("yellow")
+yellowLight.penup()
+
+
 wn.mainloop()
